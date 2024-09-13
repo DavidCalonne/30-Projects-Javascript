@@ -5,17 +5,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Micro Projets Javascript</title>
     <link rel="stylesheet" type="text/css" href="css.css" />
-    <script src="script.js"></script>
 </head>
 <body class="projects-container">
+    <!-- Pour ce site, il y a un système de langue, avec un stockage local dans le navigateur -->
+    <!-- For this site, there is a language system, with local storage in the browser -->
     <header>
-        <h1>Micro Projets Javascript</h1>
+        <h1 class="margin-top-20"
+            data-fr="30 Micro projets à faire avec Javascript"
+            data-en="30 Micro projects to build with Javascript" 
+        ></h1>
+        <div class="lang-switcher text-center">
+            <a class="lang-item" data-lang="fr"><img src="assets/lang/french.png" alt="French flag"></a>
+            <a class="lang-item" data-lang="en"><img src="assets/lang/english.png" alt="English flag"></a>
+        </div>
     </header>
     <main class="projects-main">
-        <section>
+        <div class="responsive">
+            <!-- Introduction -->
+            <p class="introduction margin-top-20"
+            data-fr="Bienvenue sur cette page dédiée aux développeurs souhaitant améliorer leurs compétences en JavaScript à travers la création de micro-projets pratiques et engageants. Que vous soyez débutant ou que vous cherchiez à affiner vos compétences, ces 30 projets vous offriront l'opportunité de mettre en pratique des concepts clés tout en explorant la flexibilité et la puissance de JavaScript. Chacun de ces projets est conçu pour être réalisable en quelques heures, vous permettant ainsi d'expérimenter, d'apprendre et de vous amuser en même temps."
+            data-en="Welcome to this page dedicated to developers who want to enhance their JavaScript skills through the creation of practical and engaging micro-projects. Whether you're a beginner or looking to sharpen your skills, these 30 projects will provide you with the opportunity to apply key concepts while exploring the flexibility and power of JavaScript. Each project is designed to be completed in just a few hours, allowing you to experiment, learn, and have fun at the same time."
+            ></p>
+            <!-- Instructions -->
+            <ul class="style-list margin-top-10">
+                <li class="bold" data-fr="Comment procéder&nbsp;?" data-en="How to proceed?"></li>
+                <li data-fr="Cliquez sur le nom d'un projet pour accéder à sa page dédiée." data-en="Click on a project's name to access its dedicated page."></li>
+                <li data-fr="Réalisez le projet en suivant les instructions fournies." data-en="Complete the project by following the provided instructions."></li>
+                <li data-fr="Une fois le projet terminé changé la class en 'project-verified' à l'élément de la liste." data-en="Once the project is completed, change the class to 'project-verified' on the list item."></li>
+            </ul>
+            
+            <span class="margin-top-10 bold" id="counter"></span>
+        </div>
+        <!-- Section des projets -->
+        <!-- Section of projects -->
+        <section class="margin-top-20">
             <ul id="projects">
+                <li class="project-unverified">
+                    <a href="./projects/to-do-list/index.html">
+                        <h2 class="project-title" data-fr="To-Do List" data-en="To-Do List"></h2>
+                        <p class="project-description" data-fr="Une application simple pour ajouter, supprimer et cocher des tâches." data-en="A simple app to add, remove, and check tasks."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/calculator/index.html">
+                        <h2 class="project-title" data-fr="Calculatrice" data-en="Calculator"></h2>
+                        <p class="project-description" data-fr="Une calculatrice de base avec les quatre opérations arithmétiques." data-en="A basic calculator with the four arithmetic operations."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/real-time-clock/index.html">
+                        <h2 class="project-title" data-fr="Horloge numérique" data-en="Digital Clock"></h2>
+                        <p class="project-description" data-fr="Une horloge en temps réel affichant l'heure actuelle." data-en="A real-time clock displaying the current time."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/number-game/index.html">
+                        <h2 class="project-title" data-fr="Jeu de devinettes" data-en="Guessing Game"></h2>
+                        <p class="project-description" data-fr="Un jeu où l'utilisateur doit deviner un nombre entre 1 et 100." data-en="A game where the user must guess a number between 1 and 100."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/random-quote/index.html">
+                        <h2 class="project-title" data-fr="Générateur de citations aléatoires" data-en="Random Quote Generator"></h2>
+                        <p class="project-description" data-fr="Afficher une citation aléatoire à chaque rechargement de la page." data-en="Display a random quote with each page reload."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/image-gallery/index.html">
+                        <h2 class="project-title" data-fr="Galerie d'images" data-en="Image Gallery"></h2>
+                        <p class="project-description" data-fr="Un site pour afficher une galerie d'images avec possibilité de naviguer entre les images." data-en="A site to display an image gallery with navigation options."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/quiz/index.html">
+                        <h2 class="project-title" data-fr="Quiz interactif" data-en="Interactive Quiz"></h2>
+                        <p class="project-description" data-fr="Un quiz avec des questions à choix multiple et un score à la fin." data-en="A quiz with multiple-choice questions and a final score."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/contact-form/index.html">
+                        <h2 class="project-title" data-fr="Formulaire de contact" data-en="Contact Form"></h2>
+                        <p class="project-description" data-fr="Un formulaire pour envoyer des messages, avec validation des champs." data-en="A form to send messages with field validation."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/guess-the-word/index.html">
+                        <h2 class="project-title" data-fr="Jeu du pendu" data-en="Hangman"></h2>
+                        <p class="project-description" data-fr="Un jeu où l'utilisateur doit deviner un mot en choisissant des lettres." data-en="A game where the user must guess a word by choosing letters."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/countdown-timer/index.html">
+                        <h2 class="project-title" data-fr="Minuteur" data-en="Timer"></h2>
+                        <p class="project-description" data-fr="Un compte à rebours que l'utilisateur peut configurer." data-en="A countdown timer that the user can set."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/pairs-game/index.html">
+                        <h2 class="project-title" data-fr="Jeu de mémoire" data-en="Memory Game"></h2>
+                        <p class="project-description" data-fr="Un jeu où l'utilisateur doit trouver des paires de cartes identiques." data-en="A game where the user must find matching pairs of cards."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/slider/index.html">
+                        <h2 class="project-title" data-fr="Slider/carrousel d'images" data-en="Image Slider/Carousel"></h2>
+                        <p class="project-description" data-fr="Un carrousel d'images avec des flèches pour naviguer." data-en="An image carousel with arrows for navigation."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/password-generator/index.html">
+                        <h2 class="project-title" data-fr="Générateur de mots de passe" data-en="Password Generator"></h2>
+                        <p class="project-description" data-fr="Générer des mots de passe sécurisés." data-en="Generate secure passwords."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/convert-currency/index.html">
+                        <h2 class="project-title" data-fr="Convertisseur de devises" data-en="Currency Converter"></h2>
+                        <p class="project-description" data-fr="Convertir des montants d'une devise à une autre." data-en="Convert amounts from one currency to another."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/tic-tac-toe/index.html">
+                        <h2 class="project-title" data-fr="Tic-tac-toe" data-en="Tic-tac-toe"></h2>
+                        <p class="project-description" data-fr="Un jeu de morpion jouable à deux." data-en="A two-player Tic-tac-toe game."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/canvas/index.html">
+                        <h2 class="project-title" data-fr="Toile de dessin" data-en="Drawing Canvas"></h2>
+                        <p class="project-description" data-fr="Une application pour dessiner sur une toile (canvas)." data-en="An application to draw on a canvas."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/journal/index.html">
+                        <h2 class="project-title" data-fr="Journal intime numérique" data-en="Digital Diary"></h2>
+                        <p class="project-description" data-fr="Une application pour ajouter, éditer et supprimer des entrées de journal." data-en="An app to add, edit, and delete journal entries."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/weather/index.html">
+                        <h2 class="project-title" data-fr="Tableau de bord météo" data-en="Weather Dashboard"></h2>
+                        <p class="project-description" data-fr="Afficher la météo actuelle en fonction de la localisation de l'utilisateur." data-en="Display the current weather based on the user's location."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/cellular-automation/index.html">
+                        <h2 class="project-title" data-fr="Jeu de la vie de Conway" data-en="Conway's Game of Life"></h2>
+                        <p class="project-description" data-fr="Une simulation du célèbre automate cellulaire." data-en="A simulation of the famous cellular automaton."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/track-expenses/index.html">
+                        <h2 class="project-title" data-fr="Suivi des dépenses" data-en="Expense Tracker"></h2>
+                        <p class="project-description" data-fr="Une application pour ajouter et suivre les dépenses mensuelles." data-en="An app to add and track monthly expenses."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/rate/index.html">
+                        <h2 class="project-title" data-fr="Système de notation" data-en="Rating System"></h2>
+                        <p class="project-description" data-fr="Noter et afficher des éléments avec des étoiles." data-en="Rate and display items with stars."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/stopwatch/index.html">
+                        <h2 class="project-title" data-fr="Application de chronomètre" data-en="Stopwatch App"></h2>
+                        <p class="project-description" data-fr="Un chronomètre avec des fonctionnalités de démarrage, pause et réinitialisation." data-en="A stopwatch with start, pause, and reset features."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/search-field/index.html">
+                        <h2 class="project-title" data-fr="Moteur de recherche" data-en="Search Engine"></h2>
+                        <p class="project-description" data-fr="Un champ de recherche pour filtrer et afficher des résultats à partir d'une liste donnée." data-en="A search field to filter and display results from a given list."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/bmi/index.html">
+                        <h2 class="project-title" data-fr="Calculateur de BMI" data-en="BMI Calculator"></h2>
+                        <p class="project-description" data-fr="Calculer l'indice de masse corporelle en fonction de la taille et du poids." data-en="Calculate Body Mass Index (BMI) based on height and weight."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/rock-paper-scissors/index.html">
+                        <h2 class="project-title" data-fr="Jeu de Pierre-Papier-Ciseaux" data-en="Rock-Paper-Scissors Game"></h2>
+                        <p class="project-description" data-fr="Un jeu de pierre-papier-ciseaux contre l'ordinateur." data-en="A rock-paper-scissors game against the computer."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/audio-player/index.html">
+                        <h2 class="project-title" data-fr="Lecteur audio" data-en="Audio Player"></h2>
+                        <p class="project-description" data-fr="Un lecteur audio avec des contrôles pour jouer, mettre en pause et changer de piste." data-en="An audio player with controls to play, pause, and switch tracks."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/svg-shapes/index.html">
+                        <h2 class="project-title" data-fr="Générateur de formes SVG" data-en="SVG Shape Generator"></h2>
+                        <p class="project-description" data-fr="Créer et manipuler des formes SVG avec des contrôles d'entrée." data-en="Create and manipulate SVG shapes with input controls."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/notes/index.html">
+                        <h2 class="project-title" data-fr="Application de prise de notes" data-en="Note-taking App"></h2>
+                        <p class="project-description" data-fr="Ajouter, éditer et supprimer des notes." data-en="Add, edit, and delete notes."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/biography/index.html">
+                        <h2 class="project-title" data-fr="Page de biographie interactive" data-en="Interactive Biography Page"></h2>
+                        <p class="project-description" data-fr="Une page biographique avec des sections dépliables pour afficher plus de contenu." data-en="A biography page with expandable sections to show more content."></p>
+                    </a>
+                </li>
+                
+                <li class="project-unverified">
+                    <a href="./projects/random-draw/index.html">
+                        <h2 class="project-title" data-fr="Simulation de tirage au sort" data-en="Random Draw Simulation"></h2>
+                        <p class="project-description" data-fr="Simuler un tirage au sort aléatoire parmi une liste de participants." data-en="Simulate a random draw from a list of participants."></p>
+                    </a>
+                </li>
+                
             </ul>
         </section>
     </main>
+    <!-- Script pour le compteur de projets terminés -->
+    <!-- Script for the counter of finished projects -->
+    <script src="assets/javascript/counter.js"></script>
+    <!-- Script pour le changement de langue -->
+    <!-- Script for language switching -->
+    <script src="assets/javascript/lang.js"></script>
 </body>
 </html>

@@ -8,10 +8,45 @@
     text-decoration: none;
 }
 
-.responsive{
-    max-width: 80%;
-    margin: 0 auto;
+.text-center{text-align: center}
+.margin-top-10{margin-top: 10px!important}
+.margin-top-20{margin-top: 20px!important}
+.bold{font-weight: bold}
+
+span{display: inline-block}
+.responsive{max-width: 80%; margin: 0 auto}
+
+/* Lang Items */
+.lang-switcher{
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
+.lang-item img{
+    cursor: pointer;
+}
+.lang-item:hover img{
+    transform: scale(1.1);
+}
+
+/* Counter ?*/
+#counter{
+    font-size: 20px;
+    background-color: rgb(232, 218, 156);
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 10px;
+}
+
+/* Stylised Liste */
+.style-list li::before{
+    content: "✔";
+    color: red;
+    margin-right: 10px;
+}
+.style-list li:first-child{margin-left: 10px}
+.style-list li:first-child::before{content: ""}
 
 .tcenter{
     text-align: center;
@@ -20,7 +55,6 @@
 
 h1{
     text-align: center;
-    margin: 20px 0;
 }
 
 #projects{
