@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Player</title>
+    <title data-fr="Système de notation" data-en="Rating System"></title>
     <!-- Your CSS here -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="../../assets/favicon.png" type="image/png">
 </head>
 <body>
+    <!-- Header Informations -->
     <header>
-        <h1 data-fr="Lecteur Audio" data-en="Audio Player"></h1>
-        <p data-fr="Explications" data-en="Explications"></p>
+        <h1 data-fr="Système de notation" data-en="Rating System"></h1>
+        <p 
+        data-fr="Noter et afficher des éléments avec des étoiles."
+        data-en="Rate and display items with stars."
+        ></p>
         <div class="lang-switcher text-center">
             <a class="lang-item" data-lang="fr"><img src="../../assets/lang/french.png" alt="French flag"></a>
             <a class="lang-item" data-lang="en"><img src="../../assets/lang/english.png" alt="English flag"></a>
         </div>
-        <a href="../../index.html" data-fr="Revenir au menu" data-en="Back to menu"></a>
+        <a class="button" href="../../index.html" data-fr="Revenir au menu" data-en="Back to menu"></a>
     </header>
+
+    <!-- Your Code here -->
+    <main id="root">
+    </main>
+
     <!-- Your Scripts here -->
      <script src="script.js"></script>
     <!-- Lang Script-->

@@ -16,6 +16,10 @@
 span{display: inline-block}
 .responsive{max-width: 80%; margin: 0 auto}
 
+footer{padding: 10px; text-align: center}
+.button{margin-top: 10px; display: inline-block; border-radius: 5px; cursor: pointer; padding: .5rem .8rem; color: white; background-color: rgb(228, 188, 77)}
+.button:hover{background-color: rgb(183, 148, 52); color: white}
+
 /* Lang Items */
 .lang-switcher{
     position: fixed;
@@ -47,16 +51,8 @@ span{display: inline-block}
 }
 .style-list li:first-child{margin-left: 10px}
 .style-list li:first-child::before{content: ""}
-
-.tcenter{
-    text-align: center;
-    margin-bottom: 20px
-}
-
-h1{
-    text-align: center;
-}
-
+.tcenter{text-align: center; margin-bottom: 20px}
+h1{text-align: center}
 #projects{
     max-width: 80%;
     margin: 0 auto;
@@ -64,27 +60,10 @@ h1{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px
 }
-
-#projects li{
-    padding: 15px;
-    border-radius: 15px
-
-}
-.project-verified{
-    background-color: rgba(99, 245, 109, 0.5)
-}
-.project-unverified{
-    background-color: rgba(239, 49, 49, 0.5)
-}
-a{
-    color: black
-}
-
-.project-title{
-    font-size: 16px;
-    color: black
-}
-.project-description{
-    margin-top: 10px;
-    font-size: 14px
-}
+#projects li{padding: 15px; border-radius: 15px}
+.project-verified{background-color: rgba(99, 245, 109, 0.5)}
+.project-unverified{background-color: rgba(239, 49, 49, 0.5)}
+.project-current{background-color: rgb(232, 218, 156)} 
+a{color: black}
+.project-title{font-size: 16px; color: black}
+.project-description{margin-top: 10px; font-size: 14px}
